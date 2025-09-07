@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wi-Fi Connect</title>
+  <style>
+    body {
+      margin: 0; height: 100vh;
+      display: flex; justify-content: center; align-items: center;
+      background: linear-gradient(135deg,#0f172a,#1e293b);
+      font-family: system-ui, sans-serif; color: #fff;
+    }
+    .btn {
+      padding: 20px 40px; font-size: 22px;
+      border: none; border-radius: 16px;
+      background: linear-gradient(90deg,#06b6d4,#7dd3fc);
+      color: #012033; font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: transform 0.1s ease-in-out;
+    }
+    .btn:hover { transform: scale(1.05); }
+  </style>
+</head>
+<body>
+  <!-- Link points to the wifi.mobileconfig file -->
+  <a href="wifi.mobileconfig" download>
+    <button class="btn">📶 Save this Wi-Fi</button>
+  </a>
+</body>
+</html>
