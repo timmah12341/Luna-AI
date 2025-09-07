@@ -5,18 +5,32 @@
   <key>PayloadContent</key>
   <array>
     <dict>
-      <key>PayloadType</key><string>com.apple.wifi.managed</string>
-      <key>PayloadVersion</key><integer>1</integer>
-      <key>PayloadIdentifier</key><string>com.example.wifi</string>
-      <key>SSID_STR</key><string>MySSID</string>
-      <key>EncryptionType</key><string>WPA</string>
-      <key>Password</key><string>mypassword</string>
+      <key>PayloadType</key>
+      <string>com.apple.wifi.managed</string>
+      <key>PayloadVersion</key>
+      <integer>1</integer>
+      <key>PayloadIdentifier</key>
+      <string>com.finke.wifi.guest</string>
+      <key>PayloadUUID</key>
+      <string>6b7b3c71-6c5a-41f0-9ef8-9d5e1e5a7f42</string>
+      <key>SSID_STR</key>
+      <string>Finke Guest</string>
+      <key>EncryptionType</key>
+      <string>WPA</string>
+      <key>Password</key>
+      <string>FinkeLaar9!</string>
     </dict>
   </array>
-  <key>PayloadType</key><string>Configuration</string>
-  <key>PayloadVersion</key><integer>1</integer>
-  <key>PayloadIdentifier</key><string>com.example.config</string>
-  <key>PayloadDisplayName</key><string>Wi-Fi Setup</string>
-  <key>PayloadUUID</key><string>12345678-1234-1234-1234-123456789abc</string>
+
+  <key>PayloadType</key>
+  <string>Configuration</string>
+  <key>PayloadVersion</key>
+  <integer>1</integer>
+  <key>PayloadIdentifier</key>
+  <string>com.finke.config</string>
+  <key>PayloadDisplayName</key>
+  <string>Finke Guest Wi-Fi</string>
+  <key>PayloadUUID</key>
+  <string>d43f2e9b-8f8a-49d4-91e1-f71c84292c77</string>
 </dict>
 </plist>
