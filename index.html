@@ -1,31 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Wi-Fi Connect</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luna Discord Bot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0; height: 100vh;
-      display: flex; justify-content: center; align-items: center;
-      background: linear-gradient(135deg,#0f172a,#1e293b);
-      font-family: system-ui, sans-serif; color: #fff;
+      font-family: 'Roboto', sans-serif;
+      background: #1e1e2f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
     }
-    .btn {
-      padding: 20px 40px; font-size: 22px;
-      border: none; border-radius: 16px;
-      background: linear-gradient(90deg,#06b6d4,#7dd3fc);
-      color: #012033; font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-      transition: transform 0.1s ease-in-out;
+    header {
+      background: #3b3b5c;
+      padding: 20px;
+      text-align: center;
     }
-    .btn:hover { transform: scale(1.05); }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #ffd700;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    a.button {
+      display: inline-block;
+      padding: 12px 24px;
+      margin: 10px 0;
+      color: #fff;
+      background: #5865f2;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    a.button:hover {
+      background: #4752c4;
+    }
+    h2 {
+      color: #ffd700;
+      margin-top: 40px;
+    }
+    ul {
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #3b3b5c;
+      margin-top: 40px;
+    }
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <!-- Link points to the wifi.mobileconfig file -->
-  <a href="wifi.mobileconfig" download>
-    <button class="btn">📶 Save this Wi-Fi</button>
-  </a>
+
+<header>
+  <h1>Luna Discord Bot</h1>
+</header>
+
+<div class="container">
+  <section>
+    <h2>Invite Luna to your server</h2>
+    <a class="button" href="https://discord.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&scope=bot+applications.commands&permissions=8" target="_blank">Invite Luna</a>
+  </section>
+
+  <section>
+    <h2>Commands</h2>
+    <ul>
+      <li><strong>!balance</strong> – Check your credits balance</li>
+      <li><strong>!balance @user</strong> – Check someone else's credits</li>
+      <li><strong>!delcredits @user <amount></strong> – Remove credits (mods only)</li>
+      <li><strong>!daily</strong> – Claim daily credits</li>
+      <li>Mention Luna in chat to get AI responses using GPT-4o-mini</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Support Us</h2>
+    <p>If you like Luna, you can support us:</p>
+    <ul>
+      <li><a href="https://patreon.com/YOUR_PATREON" target="_blank">Patreon</a></li>
+      <li><a href="https://paypal.me/YOUR_PAYPAL" target="_blank">PayPal</a></li>
+      <li>Or join our <a href="https://discord.gg/YOUR_SUPPORT_SERVER" target="_blank">support Discord</a></li>
+    </ul>
+  </section>
+</div>
+
+<footer>
+  &copy; 2025 Luna Bot | Made with ❤️
+</footer>
+
 </body>
 </html>
